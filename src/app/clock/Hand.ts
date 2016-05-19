@@ -8,10 +8,10 @@ class Hand {
 
     public update(date: Date = new Date()): void {
         this.date = date;
-        this._container.style.transform = `rotate(${this.geAngle()}deg)`;
+        this._container.style.transform = `rotate(${this.getAngle()}deg)`;
     }
 
-    geAngle(): number {
+    getAngle(): number {
         return this.getValue() * this.getAngleDistance();
     }
 
