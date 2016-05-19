@@ -1,0 +1,39 @@
+{
+  "name": "vanilla-typescript-webpack",
+  "version": "1.0.0",
+  "description": "kickstarter site using Typescript and Webpack, Vanilla Typescipt and sass",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "start": "npm run server"
+  },
+  "author": "C Iván Mercado <civan.cim@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.17.0",
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "keywords": [
+    "Typescipt",
+    "ES6",
+    "Webpack",
+    "Sass"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/civanm/vanilla-typescript-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/civanm/vanilla-typescript-webpack/issues"
+  },
+  "homepage": "https://github.com/civanm/vanilla-typescript-webpack#readme"
+}

@@ -1,0 +1,53 @@
+.clock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;  
+    }
+    
+    .seconds-container, .minutes-container, .hours-container {
+        @extend .container;
+        transition: transform 0.2s cubic-bezier(0.53, 0, 1, 1);
+    }
+    
+    .seconds  {
+        position: absolute;
+        top: 1%;
+        width: 2px;
+        height: 49%;
+        background: #000;
+        left: 50%;
+        transform-origin: 50% 60%;
+        z-index: 1;        
+    }
+    .minutes {
+        @extend .seconds;
+        background: blue;
+        width: 3px;
+    }
+    .hours {
+        @extend .seconds;
+        background: blueviolet;
+        width: 5px;
+    }
+    .center-point {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15px;
+        height: 15px;
+        background: #000;
+        border-radius: 50%;   
+        z-index: 3;
+    }
+    
+}
